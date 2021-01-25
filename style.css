@@ -34,7 +34,7 @@ body{
 }
 #progressDiv{
     grid-row: 1/2;
-    justify-self: center;
+
 }
 
 #progressDiv>p{
@@ -45,13 +45,13 @@ body{
 .slide-out {
     animation: slide-out 1.5s forwards;
     transition-timing-function: ease-in;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
 }
 
 .slide-in {
     animation: slide-in 1.5s forwards;
     transition-timing-function: ease-in;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
 }
 
 @keyframes slide-out {
@@ -61,5 +61,6 @@ body{
 
 @keyframes slide-in {
     0% { transform: translateX(-1000%); }
-    100% { transform: translateX(-155%); }
+
+    100% { transform: translateX(-100%); }
 }
