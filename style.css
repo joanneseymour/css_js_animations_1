@@ -32,6 +32,8 @@ body{
     color: white;
     grid-column: 1/2;
     padding: 40px 0px;
+    animation-delay: 1.5s;
+    transform: translateX(-500px);
 }
 
 #buttonVisibleContentContainer{
@@ -71,7 +73,7 @@ body{
 }
 
 .progress-bar-slide-in{
-    animation: progress-bar-slide-in 2s forwards;
+    animation: progress-bar-slide-in 3s forwards;
     transition-timing-function: ease-in;
     /* animation-iteration-count: infinite; */
 }
@@ -89,7 +91,7 @@ body{
 }
 
 @keyframes progress-bar-slide-in {
-    0% { transform: translateX(-160%); }
+    0% { transform: translateX(-130%); }
     /* 80% { transform: translateX(-60%); } */
     100% { transform: translateX(20%); }
 }
