@@ -12,7 +12,7 @@ body{
     display: grid;
     grid-column: 3/4;
     grid-row: 1/2;
-    grid-template-columns: 1fr 112px 1fr;
+    grid-template-columns: 382px 112px 1fr;
     background-color: #29B6F6;
     margin: auto;
     justify-content: center;
@@ -47,9 +47,14 @@ body{
     grid-row: 1/2;
     grid-column: 1/2;
     padding-top: 30px;
+    justify-self: center;
+    width: max-content;
+    transform: translateX(35%);
 }
 #progressDiv{
     grid-row: 1/2;
+    display: grid;
+    justify-content: center;
 
 }
 
@@ -73,7 +78,7 @@ body{
 }
 
 .progress-bar-slide-in{
-    animation: progress-bar-slide-in 3s forwards;
+    animation: progress-bar-slide-in 3.2s forwards;
     transition-timing-function: ease-in;
     /* animation-iteration-count: infinite; */
 }
@@ -87,11 +92,43 @@ body{
 @keyframes slide-in {
     0% { transform: translateX(-1000%); }
 
-    100% { transform: translateX(-120%); }
+    100% { transform: translateX(-165%); }
 }
 
 @keyframes progress-bar-slide-in {
-    0% { transform: translateX(-130%); }
+    0% { transform: translateX(-80%); }
     /* 80% { transform: translateX(-60%); } */
-    100% { transform: translateX(20%); }
+    100% { transform: translateX(40%); }
 }
+
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
